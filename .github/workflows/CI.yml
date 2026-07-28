@@ -14,7 +14,7 @@ jobs:
             - name: "Setup Node JS"
               uses: actions/setup-node@v7
               with:
-                node-version: "21"
+                node-version: "22"
             
             - name: "Check Node Version"
               run: node --version
@@ -31,7 +31,7 @@ jobs:
             - name: "List directories"
               run: ls
 
-            - name: "Run built command"
+            - name: "Run build command"
               run: npm run build
 
             - name: "Upload the built files"
